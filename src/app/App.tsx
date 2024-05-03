@@ -1,12 +1,9 @@
-import {Link, Route, Routes} from "react-router-dom";
-import {Suspense} from "react";
+import {Link} from "react-router-dom";
 
 import {classNames} from "shared/lib/classNames/classNames";
 import {useTheme} from "app/providers/ThemeProvider/lib/useTheme";
-import {MainPage} from "pages/MainPage";
 
 import "./styles/index.scss"
-import {AboutPage} from "pages/AboutPage";
 import {AppRouter} from "app/providers/router";
 
 const App =  () => {
