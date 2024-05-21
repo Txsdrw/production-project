@@ -3,7 +3,7 @@ import {classNames} from "shared/lib/classNames/classNames";
 import "./styles/index.scss"
 import {AppRouter} from "app/providers/router";
 import { Navbar } from "widgets/Navbar";
-import {useTheme} from "app/providers/ThemeProvider/lib/useTheme";
+import {useTheme} from "app/providers/ThemeProvider";
 
 const App = () => {
     const {theme} = useTheme()
