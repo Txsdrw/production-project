@@ -1,5 +1,5 @@
-import {ThemeToggle} from "widgets/ThemeToggle/ui/ThemeToggle";
+import { ThemeToggle } from 'widgets/ThemeToggle/ui/ThemeToggle';
 
 export {
-    ThemeToggle
-}
+    ThemeToggle,
+};

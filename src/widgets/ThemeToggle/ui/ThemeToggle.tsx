@@ -4,7 +4,6 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import DarkIcon from 'shared/assets/icons/theme-dark.svg';
 import LightIcon from 'shared/assets/icons/theme-light.svg';
 import { Button, ThemeButton } from 'shared/ui/Button/ui/Button';
-import style from './ThemeToggle.module.scss';
 
 interface ThemeToggleProps {
     className?: string;
@@ -16,7 +15,7 @@ export const ThemeToggle = ({ className }: ThemeToggleProps) => {
     return (
         <Button
             theme={ThemeButton.CLEAR}
-            className={classNames(style.ThemeToggle, {}, [className])}
+            className={classNames('', {}, [className])}
             onClick={toggleTheme}
         >
             {theme === Theme.DARK ? <DarkIcon /> : <LightIcon />}

@@ -1,5 +1,5 @@
 export function testFunc(arg: number): string {
-    console.log('Kek')
+    console.log('Kek');
 
-    return 'RANDOM'
+    return 'RANDOM';
 }
