@@ -2,6 +2,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useState } from 'react';
 import { ThemeToggle } from 'widgets/ThemeToggle';
 import { LangToggle } from 'widgets/LangToggle/ui/LangToggle';
+import { Button } from 'shared/ui/Button/ui/Button';
 import style from './Sidebar.module.scss';
 
 interface SidebarProps {
@@ -16,7 +17,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
 
     return (
         <div className={classNames(style.Sidebar, { [style.collapsed]: collapsed }, [className])}>
-            <button type="button" onClick={onToggle}>toggle</button>
+            <Button type="button" onClick={onToggle}>toggle</Button>
             <div className={style.switchers}>
                 <ThemeToggle />
                 <LangToggle className={style.lang} />
